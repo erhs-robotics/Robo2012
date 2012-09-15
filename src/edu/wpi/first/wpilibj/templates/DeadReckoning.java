@@ -33,13 +33,12 @@ public class DeadReckoning {
         bridge = bridgeMotor;
         potentiometer = new AnalogChannel(7);
         Autonomousflag = true;
-    }    
-    
+    }  
 
     public void shoot() {
-        shoot.set(.8);
-        Timer.delay(8.5);
-        collect.set(-1);
+        shoot.set(1); // Full power
+        Timer.delay(6);
+        collect.set(-1); // FIXED mechanical
     }
 
     public void driveToBridge() {

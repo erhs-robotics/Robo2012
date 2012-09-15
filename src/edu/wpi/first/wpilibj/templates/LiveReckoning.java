@@ -23,8 +23,6 @@ public class LiveReckoning {
     public ImageProcessing imageProc;
     private Launcher launcher;
     public PIDController pid;
-    
-    
 
     public LiveReckoning(RobotDrive drive, Launcher launcher,
             Jaguar collectMotor, Jaguar bridgeMotor, GyroX gyro1) {

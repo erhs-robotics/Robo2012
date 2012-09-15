@@ -58,7 +58,6 @@ public class RobotTemplate extends IterativeRobot {
         if (first) {
             while (!live.camera.freshImage()) {
             }
-            
             live.turnToTopTarget();
             dead.shoot();
             first = false;
